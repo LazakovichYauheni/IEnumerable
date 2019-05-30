@@ -8,3 +8,13 @@ C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-E
 C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-Enumerable\EnumerableTest\obj\Debug\EnumerableTest.csproj.CopyComplete
 C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-Enumerable\EnumerableTest\obj\Debug\EnumerableTest.dll
 C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-Enumerable\EnumerableTest\obj\Debug\EnumerableTest.pdb
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\bin\Debug\EnumerableTest.dll
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\bin\Debug\EnumerableTest.pdb
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\bin\Debug\Enumerable.dll
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\bin\Debug\Enumerable.pdb
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\obj\Debug\EnumerableTest.csprojAssemblyReference.cache
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\obj\Debug\EnumerableTest.csproj.CoreCompileInputs.cache
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\obj\Debug\EnumerableTest.csproj.CopyComplete
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\obj\Debug\EnumerableTest.dll
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\EnumerableTest\obj\Debug\EnumerableTest.pdb

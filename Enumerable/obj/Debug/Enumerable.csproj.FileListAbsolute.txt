@@ -4,3 +4,9 @@ C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-E
 C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-Enumerable\Enumerable\obj\Debug\Enumerable.csproj.CoreCompileInputs.cache
 C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-Enumerable\Enumerable\obj\Debug\Enumerable.dll
 C:\Users\Yauheni_Lazakovich\Desktop\aorgish-net-training-tasks-32449dfbbae5\04-Enumerable\Enumerable\obj\Debug\Enumerable.pdb
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\Enumerable\bin\Debug\Enumerable.dll
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\Enumerable\bin\Debug\Enumerable.pdb
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\Enumerable\obj\Debug\Enumerable.csprojAssemblyReference.cache
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\Enumerable\obj\Debug\Enumerable.csproj.CoreCompileInputs.cache
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\Enumerable\obj\Debug\Enumerable.dll
+C:\Users\Yauheni_Lazakovich\Documents\GitHub\IEnumerable\Enumerable\obj\Debug\Enumerable.pdb

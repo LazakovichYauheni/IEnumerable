@@ -142,8 +142,9 @@ namespace EnumerableTask {
         ///   { "", null } => { }
         ///   { } => { }
         /// </example>
-        public IEnumerable<char> GetUsedChars(IEnumerable<string> data) {
-            throw new NotImplementedException();
+        public IEnumerable<char> GetUsedChars(IEnumerable<string> data)
+        {
+            return data.SelectMany(x => x??string.Empty).Distinct();
         }
 
 
@@ -159,8 +160,8 @@ namespace EnumerableTask {
         ///   { "a", "b", "c", null, ""} => "a,b,c,null,"
         ///   { "", "" } => ","
         /// </example>
-        public string GetStringOfSequence<T>(IEnumerable<T> data) {
-            // TODO : Implement GetStringOfSequence
+        public string GetStringOfSequence<T>(IEnumerable<T> data)
+        {
             throw new NotImplementedException();
         }
 
@@ -176,9 +177,9 @@ namespace EnumerableTask {
         ///   { 1,2,3,4,5,6,7,8,9,10 } => { 10, 9, 8 }
         ///   { 10, 10, 10, 10 } => { 10, 10, 10 }
         /// </example>
-        public IEnumerable<int> Get3TopItems(IEnumerable<int> data) {
-            // TODO : Implement Get3TopItems
-            throw new NotImplementedException();
+        public IEnumerable<int> Get3TopItems(IEnumerable<int> data)
+        {
+            return data.OrderByDescending(x =>x).Take(3);
         }
 
         /// <summary> Calculates the count of numbers that are greater then 10</summary>
@@ -192,9 +193,9 @@ namespace EnumerableTask {
         ///   { 1, 2, 3, 11 } => 1
         ///   { 1, 20, 30, 40 } => 3
         /// </example>
-        public int GetCountOfGreaterThen10(IEnumerable<int> data) {
-            // TODO : Implement GetCountOfGreaterThen10
-            throw new NotImplementedException();
+        public int GetCountOfGreaterThen10(IEnumerable<int> data)
+        {
+            return data.Count(x=>x>10);
         }
 
 
@@ -208,9 +209,9 @@ namespace EnumerableTask {
         ///   { "a", "IT IS FIRST", "first item", "I am really first!" } => "IT IS FIRST"
         ///   { } => null
         /// </example>
-        public string GetFirstContainsFirst(IEnumerable<string> data) {
-            // TODO : Implement GetFirstContainsFirst
-            throw new NotImplementedException();
+        public string GetFirstContainsFirst(IEnumerable<string> data)
+        {
+            return data.FirstOrDefault(x => !string.IsNullOrEmpty(x) && x.IndexOf("first", StringComparison.CurrentCultureIgnoreCase )!=-1);
         }
 
         /// <summary> Counts the number of unique strings with length=3 </summary>
@@ -225,7 +226,7 @@ namespace EnumerableTask {
         ///   { } => 0
         /// </example>
         public int GetCountOfStringsWithLengthEqualsTo3(IEnumerable<string> data) {
-            // TODO : Implement GetCountOfStringsWithLengthEqualsTo3
+            
             throw new NotImplementedException();
         }
 
@@ -278,8 +279,9 @@ namespace EnumerableTask {
         ///    null => exception
         /// </example>
         public int GetDigitCharsCount(string data) {
-            // TODO : Implement GetDigitCharsCount
-            throw new NotImplementedException();
+            if (data == null)
+                throw new ArgumentNullException();
+            return data.Count(x => char.IsDigit(x));
         }
 
 
@@ -339,9 +341,9 @@ namespace EnumerableTask {
         ///  {"c","b","a"} => {"a","b","c"}
         ///  {"c","cc","b","bb","a,"aa"} => {"a","b","c","aa","bb","cc"}
         /// </example>
-        public IEnumerable<string> SortStringsByLengthAndAlphabet(IEnumerable<string> data) {
-            // TODO : Implement SortStringsByLengthAndAlphabet
-            throw new NotImplementedException();
+        public IEnumerable<string> SortStringsByLengthAndAlphabet(IEnumerable<string> data)
+        {
+            return data.OrderBy(x => x.Length).ThenBy(x => x);
         }
 
         /// <summary> Finds all missing digits </summary>
@@ -354,9 +356,10 @@ namespace EnumerableTask {
         ///   {"aaa","a1","b","c2","d","e3","f01234"} => {'5','6','7','8','9'}
         ///   {"a","b","c","9876543210"} => {}
         /// </example>
-        public IEnumerable<char> GetMissingDigits(IEnumerable<string> data) {
-            // TODO : Implement GetMissingDigits
-            throw new NotImplementedException();
+        public IEnumerable<char> GetMissingDigits(IEnumerable<string> data)
+        {
+            string variable = "0123456789";
+            return variable.Except(data.SelectMany(x => x));
         }
 
 
@@ -391,8 +394,8 @@ namespace EnumerableTask {
         ///  { }, {"apple", "bananas" } => { }
         /// </example>
         public IEnumerable<string> CombineNumbersAndFruits(IEnumerable<string> numbers, IEnumerable<string> fruits) {
-            // TODO : Implement CombinesNumbersAndFruits
-            throw new NotImplementedException();
+            return numbers.Aggregate((num, fruits) => num + " " + fruits);
+
         }
 
 
